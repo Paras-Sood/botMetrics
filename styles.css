@@ -19,20 +19,17 @@ h2{
     font-size: 32px;
 }
 .main{
-    /* background:url(../static/car.png); */
     background-size: 100% 100%;
-    /* min-height: 800px; */
-    /* background-size: cover; */
     margin-top: 0;
 }
 #select_option{
     text-align: center;
     margin: 10px 0;
 }
-#output{
+.content{
     margin: 20px;
 }
-#output p{
+.content p{
     padding: 5px 20px;
     margin-bottom: 0;
     font-size: large;
@@ -41,7 +38,7 @@ ol{
     margin: 0 20px;
     padding-left: 20px;
 }
-#output h2{
+.content h2{
     min-width: 520px;
     background-color: black;
     color: white;
@@ -84,7 +81,7 @@ footer div span p{
         /* background-size: 900px 650px; */
         min-height: 650px;
     }
-    #output h2{
+    .content h2{
         font-size: 26px;
         min-width: 420px;
     }
@@ -107,18 +104,20 @@ option{
 .dataElementCont{
     margin: 20px;
 }
-/* .dataElement{
-    justify-content: space-between;
-}
-.innerElement{
-    margin:5px 10px;
-} */
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+table{
+    width: auto;
+    margin: auto;
+}
 th,td{
-    padding: 5px;
+    padding: 15px;
+}
+#dataContainer{
+    width: fit-content;
+    margin: auto;
 }
 @media screen and (max-width: 500px) {
     form{
@@ -132,7 +131,7 @@ th,td{
         /* background-size: 700px 500px; */
         min-height: 500px;
     }
-    #output h2{
+    .content h2{
         font-size: 20px;
         min-width: 250px;
         max-width: 330px;

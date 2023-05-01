@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         if(this.value=='metrics'){
             document.querySelector('#metricsCont').style.display='block';
             document.querySelector('#dataCont').style.display='none';
+            document.querySelector('#heading').innerHTML="Chatbot Metrics";
         }else{
             document.querySelector('#metricsCont').style.display='none';
             document.querySelector('#dataCont').style.display='block';
+            document.querySelector('#heading').innerHTML="Chatbot Data";
         }
     }
 })
@@ -101,9 +103,9 @@ function addData(data){
         })
         cont.append(dataEle);
     }
-    const dataCont=document.querySelector('#dataContainer');
-    dataCont.innerHTML='';
-    dataCont.append(cont);
+    const dataContainer=document.querySelector('#dataContainer');
+    dataContainer.innerHTML='';
+    dataContainer.appendChild(cont);
 }
 function addgraph(xValues,yValues){
     document.querySelector('#graph_div').innerHTML=""
