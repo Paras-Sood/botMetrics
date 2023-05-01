@@ -30,7 +30,16 @@ h2{
     margin: 10px 0;
 }
 #output{
-    display: none;
+    margin: 20px;
+}
+#output p{
+    padding: 5px 20px;
+    margin-bottom: 0;
+    font-size: large;
+}
+ol{
+    margin: 0 20px;
+    padding-left: 20px;
 }
 #output h2{
     min-width: 520px;

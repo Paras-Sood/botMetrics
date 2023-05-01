@@ -23,10 +23,7 @@ function addgraph(column){
         for(const key in body){
             if(key=='id')   continue;
             arr.push({'key':key,'value':body[key]['N']});
-            // xValues.push(key);
-            // yValues.push(body[key]['N']);
         }
-        console.log(arr);
         arr.sort(function(a,b){
             if (order[a.key]<order[b.key])  return -1;
             return 1;
@@ -35,9 +32,6 @@ function addgraph(column){
             xValues.push(ele.key);
             yValues.push(ele.value);
         })
-        console.log(arr);
-        console.log(xValues);
-        console.log(yValues);
         document.querySelector('#graph_div').innerHTML=""
         let canvas=document.createElement('canvas')
         canvas.id="graph"
@@ -63,14 +57,7 @@ function addgraph(column){
                         },
                     title: {
                         display: true,
-                        text: `Number of customers ending at different positions`
-                    },
-                },
-                scales: {
-                    xAxis: {
-                        ticks: {
-                            maxTicksLimit: 10,
-                        },
+                        text: `Number of customers filling a question`
                     },
                 }
             }
