@@ -14,31 +14,51 @@
     <title>Lead data metrics</title>
 </head>
 <body>
-    <div id="main">
-        <div class="header">
-            <h1>Chatbot Metrics</h1>
+    <div class="header">
+        <h1>Chatbot Metrics</h1>
+    </div>
+    <div id="selectCont">
+        <select id="show">
+            <option value="metrics">Metrics</option>
+            <option value="data">Data</option>
+        </select>
+    </div>
+    <div id="metricsCont">
+        <div class="main">
+            <div id="output">
+                <p>The graph below depicts the number of users that filled a question. This would be helpful in knowing that at which point the most number of people are dropping off.
+                    This data can be used by analytics team to give discounts and coupon codes accordingly. Using this data, a lead can be converted to a customer by giving attractive offers.
+                </p>
+                <p>The questions are asked in the following order:</p>
+                <ol>
+                    <li>Source</li>
+                    <li>Destination</li>
+                    <li>Number of customers</li>
+                    <li>Date</li>
+                    <li>Time</li>
+                </ol>
+            </div>
         </div>
-        <div id="output">
-            <p>The graph below depicts the number of users that filled a question. This would be helpful in knowing that at which point the most number of people are dropping off.
-                This data can be used by analytics team to give discounts and coupon codes accordingly. Using this data, a lead can be converted to a customer by giving attractive offers.
-            </p>
-            <p>The questions are asked in the following order:</p>
-            <ol>
-                <li>Source</li>
-                <li>Destination</li>
-                <li>Number of customers</li>
-                <li>Date</li>
-                <li>Time</li>
-            </ol>
+        <!-- <div class="header">
+            <h1>Data Visualization</h1>
+        </div> -->
+        <div id="select_option">
+            <!-- <span style="font-size: large;font-weight: bold;">Number of leads dropping at each point</span> -->
+        </div>
+        <div id="graph_div"></div>
+    </div>
+    <div id="dataCont">
+        <!-- <div class="main">
+            <div class="header">
+                <h1>Chatbot Data</h1>
+            </div> -->
+            <div id="output">
+                <p>The data below is collected from the chatbot. This data can be picked up namma yatri team can be used to perform data analysis.</p>
+            </div>
+        </div>
+        <div id="dataContainer">
         </div>
     </div>
-    <!-- <div class="header">
-        <h1>Data Visualization</h1>
-    </div> -->
-    <div id="select_option">
-        <!-- <span style="font-size: large;font-weight: bold;">Number of leads dropping at each point</span> -->
-    </div>
-    <div id="graph_div"></div>
     <footer>
         <div>
             © Made by: 

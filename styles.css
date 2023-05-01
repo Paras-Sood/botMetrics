@@ -18,7 +18,7 @@ h2{
     margin: auto;
     font-size: 32px;
 }
-#main{
+.main{
     /* background:url(../static/car.png); */
     background-size: 100% 100%;
     /* min-height: 800px; */
@@ -80,7 +80,7 @@ footer div span p{
     h1{
         font-size: 36px;
     }
-    #main{
+    .main{
         /* background-size: 900px 650px; */
         min-height: 650px;
     }
@@ -93,6 +93,33 @@ footer div span p{
         margin: 10px auto;
     }
 }
+#dataCont{
+    display: none;
+}
+#selectCont{
+    margin: 20px;
+    text-align: center;
+}
+option{
+    font-size: large;
+    padding:10px;
+}
+.dataElementCont{
+    margin: 20px;
+}
+/* .dataElement{
+    justify-content: space-between;
+}
+.innerElement{
+    margin:5px 10px;
+} */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 5px;
+}
 @media screen and (max-width: 500px) {
     form{
         width: 320px;
@@ -101,7 +128,7 @@ footer div span p{
     h1{
         font-size: 28px;
     }
-    #main{
+    .main{
         /* background-size: 700px 500px; */
         min-height: 500px;
     }
