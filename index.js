@@ -6,7 +6,16 @@ const order={
     'destination':2,
     'numCustomers':3,
     'datev':4,
-    'timev':5
+    'timev':5,
+    'complete':6
+}
+const content={
+    'src':"Source",
+    'destination':"Destination",
+    'numCustomers':"Number of customers",
+    'datev':"Date",
+    'timev':"Time",
+    'complete':"Ride Booked!"
 }
 const url="https://ofiiv9edjc.execute-api.us-east-1.amazonaws.com/trail/metrics"
 function addgraph(column){
@@ -29,7 +38,7 @@ function addgraph(column){
             return 1;
         });
         arr.map(ele=>{
-            xValues.push(ele.key);
+            xValues.push(content[ele.key]);
             yValues.push(ele.value);
         })
         document.querySelector('#graph_div').innerHTML=""
@@ -60,7 +69,7 @@ function addgraph(column){
                         text: `Number of customers filling a question`
                     },
                 }
-            }
+            },
         })
     })
 }
